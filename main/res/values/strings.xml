@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">John Austin Inventory App</string>
+
+    <!--Login Strings-->
+    <string name="app_title">Inventory App</string>
+    <string name="user_prompt">Username:</string>
+    <string name="password_prompt">Password:</string>
+    <string name="new_user">Create User</string>
+    <string name="login">Login</string>
+
+    <!--Item Strings-->
+    <string name="item_label">Item:</string>
+    <string name="quantity_label">Qty:</string>
+    <string name="description_label">More info:</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="no_items">There are no items in this category.</string>
+    <string name="item_number">%1$s (%2$d of %3$d)</string>
+    <string name="item_hint">name</string>
+    <string name="quantity_hint">quantity</string>
+    <string name="description_hint">description</string>
+
+
+
+    <!--Toast and Snackbar Strings-->
+    <string name="item_deleted">Item deleted.</string>
+    <string name="item_added">Item added.</string>
+    <string name="item_updated">Item updated.</string>
+
+    <string name="create">Create</string>
+    <string name="category">New Category?</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_item">Update Item</string>
+    <string name="add_item">Add Item</string>
+    <string name="no_item_info">No info exists for this Item.</string>
+    <string name="category_exists">The category "%1$s" already exists.</string>
+
+    <string name="select_inventory">Select a item:</string>
+    <string name="undo">Undo</string>
+</resources>

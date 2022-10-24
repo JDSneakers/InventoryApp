@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/app_title"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/loginicon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/user_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/user_prompt"
+        app:layout_constraintTop_toBottomOf="@id/app_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/user_prompt"
+        />
+
+    <TextView
+        android:id="@+id/password_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_prompt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/password_prompt"
+        app:layout_constraintTop_toBottomOf="@id/user_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        app:layout_constraintBaseline_toBaselineOf="@id/password_prompt"
+        />
+
+    <Button
+        android:id="@+id/login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="@string/login"
+        />
+
+    <Button
+        android:id="@+id/create_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/login_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_user"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
